@@ -7,7 +7,7 @@
     <title>Weather</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
 
 </head>
 <body>
@@ -23,18 +23,20 @@
             </nav>
         </header>
         <main class="main">
-            <div class="main__seach">                    
-                <input type="text" class="main__input" value="your place">
-                <label class="main__label" ><img src="img/768px-Search_Icon.svg.png" alt="" width="30px"></label>
-            </div>
+            <form class="main__seach" id="form">                    
+                <input type="text" id="main__input" class="main__input" placeholder="enter your place" />
+                <input type="submit"  class="main__label"  value="  " />
+                <img class="place-img" src="img/768px-Search_Icon.svg.png" alt="" width="30px">
+            </form>
+            <div class="place-span"></div>
             <div class="main__place">
                 <div class="main__place-img">
                     <img src="img/weather-icon.svg" alt="" width="100px">
-                    <div class="main__place-deg">28°c</div>
+                    <div class="main__place-deg"> <span class="deg-number"> 28</span> <span class="deg-cel" id="cels"> °c </span><a href="#" class="deg-cel" id="fahrenheit ">|°F</a></div>
                 </div>
                 <div class="main__place-about">Sunny weather. West wind, 1.5 m/s. The minimum outdoor temperature is 25℃, the maximum is 29℃.
                 </div>
-                <div class="main__place-place">New York</div>
+                <div class="main__place-place">New York</div>                
             </div>
             <div class="main__time">
                 <p class="main__time-title">temperature</p>
