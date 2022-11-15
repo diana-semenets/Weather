@@ -65,7 +65,7 @@ li {
   justify-content: space-between;
 }
 .main__place-img {
-  max-width: 250px;
+  max-width: 260px;
   display: flex;
 }
 .main__place-deg {
