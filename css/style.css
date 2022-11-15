@@ -6,10 +6,10 @@ li {
 .wrapper {
   font-family: Poppins;
   max-width: 1300px;
-  height: 700px;
+  height: 100%;
   margin: 0 auto;
   background-image: url("../img/pinal-jain-x-XwnC7FgFM-unsplash.jpg");
-  background-size: auto;
+  background-size: 150%;
   color: rgb(51, 48, 48);
 }
 
@@ -48,9 +48,14 @@ li {
   color: rgb(124, 119, 119);
 }
 .main__label {
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgba(240, 214, 169, 0.425);
+  border: 2px solid rgb(117, 79, 7);
   position: absolute;
-  top: 60px;
-  left: 500px;
+  top: 55px;
+  left: 485px;
 }
 .main__place {
   max-width: 1100px;
@@ -60,7 +65,7 @@ li {
   justify-content: space-between;
 }
 .main__place-img {
-  max-width: 230px;
+  max-width: 250px;
   display: flex;
 }
 .main__place-deg {
@@ -106,6 +111,15 @@ li {
   font-weight: 500;
 }
 
+.place-img {
+  margin-left: -55px;
+}
+
+.deg-cel {
+  font-size: 28px;
+  font-weight: 300;
+}
+
 .container.text-center {
   max-width: 700px;
   margin-left: 50px;
@@ -113,4 +127,11 @@ li {
 
 .item {
   width: 70px;
+}
+
+.place-span {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: Poppins;
+  margin: 0px 0 30px 80px;
 }/*# sourceMappingURL=style.css.map */
