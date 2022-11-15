@@ -85,15 +85,23 @@ form.addEventListener("submit", getPlace);
 
 //----------------------//
 
-let temperature = 17;
+//let temperature = 17;
 
 function showTempFarent (event) {
     event.preventDefault();
-    let temp = document.querySelector('.deg-number');
-    let tempFaren = Math.round( temperature * 9 / 5 ) + 32;
-    temp.innerHTML = tempFaren;
-    console.log('ok')
+    let temp = document.querySelector('.deg-number');    
+    temp.innerHTML = 66;    
 }
-showTempFarent();
-// let fahrenheit = document.querySelector('#fahrenheit');
-// fahrenheit.addEventListener('click', showTempFarent);
+
+function showTempCels (event) {
+    event.preventDefault();
+    let temp = document.querySelector('.deg-number');    
+    temp.innerHTML = 19;    
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showTempFarent);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showTempCels);
+
