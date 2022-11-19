@@ -37,6 +37,16 @@ li {
 .main__seach {
   position: relative;
 }
+.main__seach-btn {
+  margin-left: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid rgb(117, 79, 7);
+  background: rgba(240, 214, 169, 0.425);
+  text-transform: uppercase;
+  box-shadow: 3px 3px 3px 0px rgba(117, 79, 7, 0.582);
+}
 .main__input {
   width: 500px;
   height: 50px;
@@ -109,6 +119,12 @@ li {
 }
 .main__pressure-pressure {
   font-weight: 500;
+}
+
+.main__seach-btn:hover {
+  box-shadow: 5px 5px 5px 0px rgba(117, 79, 7, 0.582);
+  background: rgba(223, 199, 157, 0.582);
+  transition: all ease 0.3s;
 }
 
 .place-img {
