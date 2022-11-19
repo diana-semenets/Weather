@@ -124,7 +124,7 @@ function getPlace (event) {
                 
     }
   
-    let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let apiKey = "961dd11ab08397d71009631978cfd684";
     let units = "metric";
     let cityInput = document.querySelector('#main__input');
     let city = cityInput.value;
@@ -152,7 +152,7 @@ function showGeolocationWeather(response) {
   }
   
   function retrievePosition(position) {
-    let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let apiKey = "961dd11ab08397d71009631978cfd684";
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
@@ -164,3 +164,10 @@ function showGeolocationWeather(response) {
 }
 let btnGeo = document.querySelector('.main__seach-btn');
 btnGeo.addEventListener('click', geolocationWeather);
+
+
+
+
+
+
+
